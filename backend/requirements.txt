@@ -1,0 +1,5 @@
+Flask
+Flask-CORS
+reportlab
+Pillow
+python-dateutil 

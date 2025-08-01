@@ -1,0 +1,204 @@
+.App {
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+.App h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.App h3 {
+  color: #555;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.App p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Header styling with Akshar Paaul branding */
+.header {
+  background: linear-gradient(135deg, #E8B4E8 0%, #F0C8F0 100%); /* Light purple/pink header */
+  padding: 30px 20px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(232, 180, 232, 0.3);
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  background: linear-gradient(135deg, #007BFF 0%, #FF007F 100%); /* Blue to pink gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: bold;
+}
+
+/* Logo styling */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.logo-image {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+
+
+.logo-text {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.logo-text .akshar {
+  color: #007BFF; /* Blue */
+}
+
+.logo-text .paaul {
+  color: #FF007F; /* Pink */
+}
+
+/* Form specific styles */
+.App form {
+  max-width: 100%;
+}
+
+.App .form-group input:focus,
+.App .form-group select:focus,
+.App .form-group textarea:focus {
+  border-color: #FF007F; /* Pink focus */
+  box-shadow: 0 0 0 3px rgba(255, 0, 127, 0.1);
+}
+
+/* Button styling */
+.btn {
+  background: linear-gradient(135deg, #FF007F 0%, #E60072 100%); /* Bright pink gradient */
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 0, 127, 0.4);
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, #007BFF 0%, #0069D9 100%); /* Blue gradient */
+}
+
+.btn-secondary:hover {
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%); /* Green gradient */
+}
+
+.btn-success:hover {
+  box-shadow: 0 8px 20px rgba(40, 167, 69, 0.4);
+}
+
+/* Loading animation enhancement */
+.App .loading {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.App .spinner {
+  border-width: 3px;
+  width: 30px;
+  height: 30px;
+  border-top-color: #FF007F; /* Pink spinner */
+}
+
+/* Message styling */
+.App .success-message {
+  background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+  color: #155724;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px 0;
+  border-left: 4px solid #28a745;
+}
+
+.App .error-message {
+  background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);
+  color: #721c24;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px 0;
+  border-left: 4px solid #dc3545;
+}
+
+/* Card hover effects */
+.App .card {
+  position: relative;
+}
+
+.App .card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 15px;
+  background: linear-gradient(135deg, rgba(255, 0, 127, 0.05) 0%, rgba(0, 123, 255, 0.05) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.App .card:hover::after {
+  opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+  
+  .logo {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .logo-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+  
+  .logo-text {
+    font-size: 1.5rem;
+  }
+} 
